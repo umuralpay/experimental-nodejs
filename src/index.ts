@@ -4,7 +4,10 @@ const APP = express();
 const APP_PORT = 3000;
 
 APP.get('/', (req: Request, res: Response) => {
-
+    res.json({
+        "success": false,
+        "data": "selam 2"
+    })
 });
 
 APP.listen(APP_PORT, () => {
