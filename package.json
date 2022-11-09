@@ -6,9 +6,10 @@
   "scripts": {
     "test": "yarn test",
     "start": "node ./build/index.js",
+    "start-watch": "node --watch ./build/index.js",
     "build": "tsc",
     "build-watch": "tsc -w",
-    "dev": "yarn build && yarn start"
+    "dev": "yarn build-watch && yarn start"
   },
   "repository": {
     "type": "git",
